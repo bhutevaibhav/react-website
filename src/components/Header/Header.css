@@ -5,18 +5,29 @@
     background: var(--white-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 12px 24px;
+    /* height: 80px; */
     position: relative;
 }
 
+.logo {
+    flex: 1;
+}
+
 .logo a {
+    display: block;
     color: inherit;
     cursor: pointer;
-    flex: 1;
-
 }
 
 .menu-icon {
     display: block;
+    background-color: transparent;
+    border: none;
+}
+
+.menu-icon img {
+    width: 34px;
+    height: 34px;
 }
 
 .nav-links {
@@ -36,11 +47,12 @@
     display: flex;
 }
 
-
 .nav-links li a{
     font-size: var(--fontSize-md);
     font-weight: var(--fontWeight-semibold);
+    font-size: var(--fontSize-lg);
     color: inherit;
+    margin: 0 12px;
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -51,6 +63,11 @@
 
 
 @media(min-width: 768px) {
+    .logo {
+        flex: 1;
+        font-size: var(--fontSize-xxl);
+    }
+
     .menu-icon {
         display: none;
     }
