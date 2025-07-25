@@ -1,4 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --primary-color: #FF6464;
+  --secondary-color: #00A8CC;
+  --background-color: #EDF7FA;
+  --dark-color: #21243D;
+  --light-color: #8695A4;
+  --white-color: #FFFFFF;
+
+  --fontSize-xs: 0.75rem;    
+  --fontSize-sm: 0.875rem;   
+  --fontSize-md: 1rem;       
+  --fontSize-lg: 1.12rem;   
+  --fontSize-xl: 1.25rem;    
+  --fontSize-xxl: 1.5rem;    
+  --fontSize-xxxl: 2rem;
+  
+  --fontWeight-normal: 400;
+  --fontWeight-medium: 500;
+  --fontWeight-semibold: 600;
+  --fontWeight-bold: 700;
+
+  --borderRadius-sm: 4px;
+  --borderRadius-md: 8px;
+  --borderRadius-lg: 12px;
+  --borderRadius-xl: 16px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,6 +59,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 a {
@@ -65,4 +114,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
