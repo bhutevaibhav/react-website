@@ -19,13 +19,19 @@ const Header = () => {
         <Link to="/">Portfolio</Link>
       </h1>
 
-      <div className='menu-icon'>
+      <button 
+        className='menu-icon' 
+        aria-label={isMenuOpen ? 'Close Menu' : 'Open Menu'}
+        aria-controls= "main-menu"
+        aria-expanded={isMenuOpen ? 'true' : 'false'}
+        >
+          
         <img 
           src={isMenuOpen ? CloseMenu : MenuIcon} 
           alt={isMenuOpen ? 'Close Menu' : 'Open Menu'} 
           onClick={() => setIsMenuOpen(!isMenuOpen)} 
         />
-      </div>
+      </button>
 
       <nav >
         <ul className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
