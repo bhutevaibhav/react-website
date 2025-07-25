@@ -1,0 +1,79 @@
+.slider {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 40px 20px ;
+    /* background-color: var(--background-color); */
+    height: 80vh;
+}
+
+.slider-img-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.slider-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: #555 0px 0px 10px 0px;
+}
+
+.slider-content {
+    text-align: center ;
+    max-width: 500px;
+}
+
+.slider-content h1 {
+    font-size: var(--fontSize-xxxl);
+    font-weight: var(--fontWeight-bold);
+    margin-bottom: 16px;
+}
+
+.slider-content p {
+    font-size: var(--fontSize-xl);
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.slider-btn {
+    font-family: inherit;
+    font-size: var(--fontSize-lg);
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: var(--borderRadius-sm);
+}
+
+.slider-btn:hover {
+    background-color: #d93b3b;
+}
+
+@media(min-width: 768px) {
+    .slider {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .slider-content {
+        margin: 20px;
+        text-align: left;
+        flex: 1;
+        order: 1  /* Ensures content appears before image on larger screens */
+
+    }
+
+    .slider-img-wrapper {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        order: 2;
+        margin-top: 0; /* Removes top margin on larger screens */
+    }
+}
